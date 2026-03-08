@@ -1,65 +1,162 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laravel Product Management
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Simple **CRUD Product Management System** built with Laravel.
+This project demonstrates backend development concepts such as routing, controllers, database migrations, search functionality, and CRUD operations.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📌 Project Overview
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+This project is a simple product management system that allows users to manage products through a web interface.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Users can:
 
-## Learning Laravel
+* Create new products
+* View product lists
+* Search products
+* Update product information
+* Delete products
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+The purpose of this project is to practice fundamental web development concepts using Laravel.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## ⚙️ Tech Stack
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+* PHP
+* Laravel
+* MySQL
+* Blade Template
+* Bootstrap
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## ✨ Features
 
-## Contributing
+* Create Product
+* View Product List
+* Search Product
+* Edit Product
+* Delete Product
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🗂 Project Structure (Important Folders)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```
+app/
+ └── Http/
+      └── Controllers/
+           └── ProductController.php
 
-## Security Vulnerabilities
+resources/
+ └── views/
+      └── products/
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+routes/
+ └── web.php
 
-## License
+database/
+ └── migrations/
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
 
-Laravel Basic Workshop
-CRUD Product System
-- Create
-- Edit
-- Delete
+## 🚀 Installation
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/your-username/your-repository-name.git
+```
+
+### 2. Go to project directory
+
+```
+cd your-repository-name
+```
+
+### 3. Install dependencies
+
+```
+composer install
+```
+
+### 4. Create environment file
+
+```
+cp .env.example .env
+```
+
+### 5. Generate application key
+
+```
+php artisan key:generate
+```
+
+### 6. Setup database
+
+Edit `.env`
+
+```
+DB_DATABASE=your_database
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 7. Run migration
+
+```
+php artisan migrate
+```
+
+### 8. Start development server
+
+```
+php artisan serve
+```
+
+Open browser
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 🔎 Search Feature
+
+Users can search products by name using the search input.
+The system filters product records from the database and displays matching results.
+
+---
+
+## 🧪 CRUD Functions
+
+| Function | Description              |
+| -------- | ------------------------ |
+| Create   | Add new product          |
+| Read     | View product list        |
+| Update   | Edit product information |
+| Delete   | Remove product           |
+| Search   | Find products by keyword |
+
+---
+
+## 📚 Learning Purpose
+
+This project was built to practice:
+
+* Laravel MVC architecture
+* Routing
+* Controllers
+* Blade templating
+* Database migrations
+* CRUD operations
+* Search functionality
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
