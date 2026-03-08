@@ -157,6 +157,6 @@ This project was built to practice:
 
 ---
 
-## 📄 License
+## 📄 Chirasuki
 
 This project is open-source and available under the MIT License.
